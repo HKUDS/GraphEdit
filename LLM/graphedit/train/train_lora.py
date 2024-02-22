@@ -23,6 +23,7 @@ import os
 from typing import Dict, Optional, Sequence, List
 
 import sys
+sys.path.append("/xxx/xxx/LLM")
 sys.path.append("/xxx/xxx/LLM/graphedit/model")
 
 from GraphEdit import GraphEditForCausalLM
@@ -35,13 +36,13 @@ import transformers
 from transformers import Trainer, BitsAndBytesConfig, deepspeed
 import torch
 
-from fastchat.train.train import (
+from graphedit.train.train import (
     DataArguments,
     ModelArguments,
     make_supervised_data_module,
 )
 
-from fastchat.train.llama_flash_attn_monkey_patch import (
+from graphedit.train.llama_flash_attn_monkey_patch import (
     replace_llama_attn_with_flash_attn,
 )
 
