@@ -2,7 +2,7 @@
 Filter conversations with wrong formats.
 
 Usage:
-python3 -m fastchat.data.filter_wrong_format --in input.json --out output.json
+python3 -m graphedit.data.filter_wrong_format --in input.json --out output.json
 
 """
 import argparse

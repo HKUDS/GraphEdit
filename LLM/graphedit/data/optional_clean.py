@@ -2,8 +2,8 @@
 Do optional cleaning (e.g., remove some languages).
 
 Usage:
-python3 -m fastchat.data.optional_clean --in input.json --out output.json --keep-lang en
-python3 -m fastchat.data.optional_clean --in input.json --out output.json --skip-lang en
+python3 -m graphedit.data.optional_clean --in input.json --out output.json --keep-lang en
+python3 -m graphedit.data.optional_clean --in input.json --out output.json --skip-lang en
 
 Requirement:
 pip3 install polyglot pyicu pycld2

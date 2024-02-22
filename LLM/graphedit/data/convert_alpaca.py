@@ -1,7 +1,7 @@
 """
 Convert alpaca dataset into sharegpt format.
 
-Usage: python3 -m fastchat.data.convert_alpaca --in alpaca_data.json
+Usage: python3 -m graphedit.data.convert_alpaca --in alpaca_data.json
 """
 
 import argparse

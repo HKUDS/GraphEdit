@@ -188,6 +188,7 @@ pip install torch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0
 
 pip install torch_geometric
 pip install dgl
+pip install flash_attn==1.0.4
 ```
 
 ## 1. Download TAG datasets

@@ -13,7 +13,7 @@ import warnings
 
 import requests
 
-from fastchat.constants import LOGDIR
+from graphedit.constants import LOGDIR
 
 
 handler = None

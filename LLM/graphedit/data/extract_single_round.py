@@ -1,7 +1,7 @@
 """
 Extract the first round of the conversations.
 
-Usage: python3 -m fastchat.data.extract_single_round --in sharegpt.json
+Usage: python3 -m graphedit.data.extract_single_round --in sharegpt.json
 """
 import argparse
 import json

@@ -2,7 +2,7 @@
 Do optional replace of bos/eos/pad/unk.
 
 Usage:
-python3 -m fastchat.data.optional_replace --in input.json --out output.json --model-name-or-path <your_token_path>
+python3 -m graphedit.data.optional_replace --in input.json --out output.json --model-name-or-path <your_token_path>
 
 Requirement:
 pip3 install transformers tqdm

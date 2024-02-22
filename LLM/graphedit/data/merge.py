@@ -1,7 +1,7 @@
 """
 Merge two conversation files into one
 
-Usage: python3 -m fastchat.data.merge --in file1.json file2.json --out merged.json
+Usage: python3 -m graphedit.data.merge --in file1.json file2.json --out merged.json
 """
 
 import argparse

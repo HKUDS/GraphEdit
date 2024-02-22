@@ -1,7 +1,7 @@
 """
 Conversation prompt templates.
 
-We kindly request that you import fastchat instead of copying this file if you wish to use it.
+We kindly request that you import graphedit instead of copying this file if you wish to use it.
 If you have any changes in mind, please contribute back so the community can benefit collectively and continue to maintain these valuable templates.
 """
 
@@ -1114,7 +1114,7 @@ register_conv_template(
 
 
 if __name__ == "__main__":
-    from fastchat.conversation import get_conv_template
+    from graphedit.conversation import get_conv_template
 
     print("-- Vicuna template --")
     conv = get_conv_template("vicuna_v1.1")

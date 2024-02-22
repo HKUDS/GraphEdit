@@ -1,7 +1,7 @@
 """
 Get stats of a dataset.
 
-Usage: python3 -m fastchat.data.get_stats --in sharegpt.json
+Usage: python3 -m graphedit.data.get_stats --in sharegpt.json
 """
 
 import argparse
