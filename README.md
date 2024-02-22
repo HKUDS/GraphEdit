@@ -200,7 +200,7 @@ pip install flash_attn==1.0.4
 
 ## 2. Getting Started
 
-* Replace the system path in `./LLM/graphedit/eval/eval_model.py` and `./LLM/graphedit/trainl/train_lora.py`  with your path.
+* Replace the system path in `./LLM/graphedit/eval/eval_model.py`, `./LLM/graphedit/train/train_lora.py` and `./LLM/scripts/get_embs.py`  with your path.
 ### Stage-1: Instruction tuning the LLM
 * Vicuna-7b can get from the [huggingface](https://huggingface.co/lmsys/vicuna-7b-v1.5-16k).
 * Trained Lora models are provided [here](https://drive.google.com/drive/folders/15MO09sVetHaEPBAYM2M2kZ4eyuPdL-Ng?usp=drive_link).
