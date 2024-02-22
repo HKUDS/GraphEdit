@@ -193,9 +193,10 @@ pip install dgl
 ## 2. Download TAG datasets
 | Dataset | Description |
 |--|--|
-| Pubmed | Download the dataset here, unzip and move it to `GNN/datasets/pubmed` |
-| Citeseer | Download the dataset here, unzip and move it to `GNN/datasets/citeseer` |
-| Cora | Download the dataset here, unzip and move it to `GNN/datasets/cora` |
+| Pubmed | Download the dataset [here](https://drive.google.com/file/d/11OVDmP_DaM3urAswIlMLjiby28X8-8_Z/view?usp=drive_link), unzip and move it to `GNN/datasets/pubmed` |
+| Citeseer | Download the dataset [here](https://drive.google.com/file/d/1KtFjg95p3tPRWQ5XCqTtjJh9nXLylcbQ/view?usp=drive_link), unzip and move it to `GNN/datasets/citeseer` |
+| Cora | Download the dataset [here](https://drive.google.com/file/d/1fO9tAX2yUoQ74WBE25bAw943nRCKaBqj/view?usp=drive_link), unzip and move it to `GNN/datasets/cora` |
+
 
 ## 3. Getting Started
 ### Stage-1: Instruction tuning the LLM
