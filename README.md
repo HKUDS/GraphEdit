@@ -180,6 +180,7 @@
     └── pyproject.toml
 ```
 ## 0. Python Environment Setup
+* Packed conda environment is provided [here](https://drive.google.com/file/d/1eeLKFiDU4CbOjb3uzl1Ur0jHXAEUyh5j/view?usp=drive_link)
 ```bash
 conda create --name GraphEdit python=3.8
 conda activate GraphEdit
@@ -229,7 +230,7 @@ python scripts/result2np.py
 ```
 
 ### Stage-4: Eval the refined structure
-* Refined structrues provided [here](https://drive.google.com/drive/folders/1EeggwedsQraVVIqxkqQDOGBOH4qwVvLU?usp=drive_link)
+* Refined structrues are provided [here](https://drive.google.com/drive/folders/1EeggwedsQraVVIqxkqQDOGBOH4qwVvLU?usp=drive_link)
 ```bash
 cd ../GNN/
 python main.py
