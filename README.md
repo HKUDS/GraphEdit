@@ -205,13 +205,13 @@ pip install dgl
 * Trained Lora models are provided [here](https://drive.google.com/drive/folders/15MO09sVetHaEPBAYM2M2kZ4eyuPdL-Ng?usp=drive_link).
 ```bash
 cd GraphEdit/LLM/
-sh script/train_lora.sh
+sh scripts/train_lora.sh
 
-python script/apply_lora.py
+python scripts/apply_lora.py
 ```
 ### Stage-2: Get the candidate structure
 ```bash
-python script/get_embs.py
+python scripts/get_embs.py
 
 cd ../GNN/
 python train_edge_predictor.py
@@ -220,10 +220,10 @@ python predict_edge.py --combine
 ### Stage-3: Refine the candidate structure
 ```bash
 cd ../LLM/
-python script/create_ins.py
-sh script/eval.sh
+python scripts/create_ins.py
+sh scripts/eval.sh
 
-python script/result2np.py
+python scripts/result2np.py
 ```
 
 ### Stage-4: Eval the refined structure
