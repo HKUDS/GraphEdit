@@ -199,10 +199,10 @@ pip install dgl
 
 ## 2. Getting Started
 
-* Replace system path in `./LLM/graphedit/eval/eval_model.py` and `./LLM/graphedit/trainl/train_lora.py`  with your path.
+* Replace the system path in `./LLM/graphedit/eval/eval_model.py` and `./LLM/graphedit/trainl/train_lora.py`  with your path.
 ### Stage-1: Instruction tuning the LLM
 * Vicuna-7b can get from the [huggingface](https://huggingface.co/lmsys/vicuna-7b-v1.5-16k).
-* Trained lora models are provided [here](https://drive.google.com/drive/folders/15MO09sVetHaEPBAYM2M2kZ4eyuPdL-Ng?usp=drive_link).
+* Trained Lora models are provided [here](https://drive.google.com/drive/folders/15MO09sVetHaEPBAYM2M2kZ4eyuPdL-Ng?usp=drive_link).
 ```bash
 cd GraphEdit/LLM/
 sh script/train_lora.sh
