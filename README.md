@@ -229,6 +229,7 @@ python scripts/result2np.py
 ```
 
 ### Stage-4: Eval the refined structure
+* Refined structrues provided [here](https://drive.google.com/drive/folders/1EeggwedsQraVVIqxkqQDOGBOH4qwVvLU?usp=drive_link)
 ```bash
 cd ../GNN/
 python main.py
