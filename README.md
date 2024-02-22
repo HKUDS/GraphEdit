@@ -216,7 +216,7 @@ python scripts/get_embs.py
 
 cd ../GNN/
 python train_edge_predictor.py
-python predict_edge.py --combine
+python predict_edge.py --combine True
 ```
 ### Stage-3: Refine the candidate structure
 ```bash
