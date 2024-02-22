@@ -1,6 +1,6 @@
 # **GraphEdit: Large Language Models for Graph Structure Learning**
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/b9f51e64959e4999ad469c2ca437373a.png#pic_center)
-## Code Structure
+## 0. Code Structure
 ```bash
 .
 ├── README.md
@@ -179,7 +179,7 @@
     ├── format.sh
     └── pyproject.toml
 ```
-## 0. Python Environment Setup
+## 1. Python Environment Setup
 ```bash
 conda create --name GraphEdit python=3.8
 conda activate GraphEdit
@@ -190,14 +190,14 @@ pip install torch_geometric
 pip install dgl
 ```
 
-## 1. Download TAG datasets
+## 2. Download TAG datasets
 | Dataset | Description |
 |--|--|
 | Pubmed | Download the dataset here, unzip and move it to `GNN/datasets/pubmed` |
 | Citeseer | Download the dataset here, unzip and move it to `GNN/datasets/citeseer` |
 | Cora | Download the dataset here, unzip and move it to `GNN/datasets/cora` |
 
-## 2. Getting Started
+## 3. Getting Started
 ### Stage-1: Instruction tuning the LLM
 * Vicuna-7b can get from the [huggingface](https://huggingface.co/lmsys/vicuna-7b-v1.5-16k).
 ```bash
@@ -229,7 +229,7 @@ cd ../GNN/
 python main.py
 ```
 
-## 3. Instruction Template
+## 4. Instruction Template
 > Pubmed
 
 ```bash
