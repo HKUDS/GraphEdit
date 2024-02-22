@@ -211,6 +211,7 @@ sh scripts/train_lora.sh
 python scripts/apply_lora.py
 ```
 ### Stage-2: Get the candidate structure
+* Trained edge predictors are provided [here](https://drive.google.com/drive/folders/1bJ5rArLRa-MMbqytioZFQt2HRWMquIHl?usp=drive_link)
 ```bash
 python scripts/get_embs.py
 
