@@ -101,7 +101,7 @@ def train(args):
         if test_accuracy > best_accuracy:
             best_accuracy = test_accuracy
             epochs_no_improve = 0
-            torch.save(model.state_dict(), args.dataset + '_edge_predictor.pth')
+            torch.save(model.state_dict(), './datasets/' + args.dataset + '/' + args.dataset + '_edge_predictor.pth')
         else:
             epochs_no_improve += 1
 
