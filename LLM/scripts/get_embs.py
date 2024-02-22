@@ -2,6 +2,9 @@ import torch
 import numpy as np
 from tqdm import tqdm
 
+import sys
+sys.path.append("/xxx/xxx/LLM")
+
 from transformers import AutoTokenizer
 from graphedit.model.GraphEdit import GraphEditForCausalLM
 
