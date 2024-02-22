@@ -1,6 +1,6 @@
 """
 Usage:
-python3 -m fastchat.model.convert_fp16 --in in-folder --out out-folder
+python3 -m graphedit.model.convert_fp16 --in in-folder --out out-folder
 """
 import argparse
 

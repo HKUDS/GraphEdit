@@ -243,7 +243,7 @@ def train():
         if training_args.local_rank == 0:
             state_dict = state_dict_zero3
     else:
-        # in other mode we use original code from fastchat team, to make sure our change is minimum
+        # in other mode we use original code from graphedit team, to make sure our change is minimum
         state_dict = get_peft_state_maybe_zero_3(
             model.named_parameters(), lora_args.lora_bias
         )

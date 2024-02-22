@@ -35,14 +35,14 @@ import transformers
 from torch.utils.data import Dataset
 from transformers import Trainer, AddedToken, BitsAndBytesConfig, deepspeed
 
-from fastchat.train.train_flant5 import (
+from graphedit.train.train_flant5 import (
     smart_tokenizer_and_embedding_resize,
     make_supervised_data_module,
 )
 
-from fastchat.train.train_lora import get_peft_state_maybe_zero_3
+from graphedit.train.train_lora import get_peft_state_maybe_zero_3
 
-from fastchat.model.model_adapter import get_conversation_template
+from graphedit.model.model_adapter import get_conversation_template
 
 default_conversation = get_conversation_template("t5")
 
@@ -211,7 +211,7 @@ def train():
         if training_args.local_rank == 0:
             state_dict = state_dict_zero3
     else:
-        # in other mode we use original code from fastchat team, to make sure our change is minimum
+        # in other mode we use original code from graphedit team, to make sure our change is minimum
         state_dict = get_peft_state_maybe_zero_3(
             model.named_parameters(), lora_args.lora_bias
         )

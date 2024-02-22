@@ -26,21 +26,21 @@ from transformers import (
     T5Tokenizer,
 )
 
-from fastchat.constants import CPU_ISA
-from fastchat.conversation import Conversation, get_conv_template
-from fastchat.model.compression import load_compress_model
-from fastchat.model.llama_condense_monkey_patch import replace_llama_with_condense
-from fastchat.model.model_chatglm import generate_stream_chatglm
-from fastchat.model.model_codet5p import generate_stream_codet5p
-from fastchat.model.model_falcon import generate_stream_falcon
-from fastchat.model.model_exllama import generate_stream_exllama
-from fastchat.model.monkey_patch_non_inplace import (
+from graphedit.constants import CPU_ISA
+from graphedit.conversation import Conversation, get_conv_template
+from graphedit.model.compression import load_compress_model
+from graphedit.model.llama_condense_monkey_patch import replace_llama_with_condense
+from graphedit.model.model_chatglm import generate_stream_chatglm
+from graphedit.model.model_codet5p import generate_stream_codet5p
+from graphedit.model.model_falcon import generate_stream_falcon
+from graphedit.model.model_exllama import generate_stream_exllama
+from graphedit.model.monkey_patch_non_inplace import (
     replace_llama_attn_with_non_inplace_operations,
 )
-from fastchat.modules.awq import AWQConfig, load_awq_quantized
-from fastchat.modules.exllama import ExllamaConfig, load_exllama_model
-from fastchat.modules.gptq import GptqConfig, load_gptq_quantized
-from fastchat.utils import get_gpu_memory
+from graphedit.modules.awq import AWQConfig, load_awq_quantized
+from graphedit.modules.exllama import ExllamaConfig, load_exllama_model
+from graphedit.modules.gptq import GptqConfig, load_gptq_quantized
+from graphedit.utils import get_gpu_memory
 
 # Check an environment variable to check if we should be sharing Peft model
 # weights.  When false we treat all Peft models as separate.
@@ -336,7 +336,7 @@ def get_conversation_template(model_path: str) -> Conversation:
 
 def get_generate_stream_function(model: torch.nn.Module, model_path: str):
     """Get the generate_stream function for inference."""
-    from fastchat.serve.inference import generate_stream
+    from graphedit.serve.inference import generate_stream
 
     model_type = str(type(model)).lower()
     is_chatglm = "chatglm" in model_type
@@ -607,9 +607,9 @@ class VicunaAdapter(BaseModelAdapter):
             warnings.warn(
                 "\nYou are probably using the old Vicuna-v0 model, "
                 "which will generate unexpected results with the "
-                "current fastchat.\nYou can try one of the following methods:\n"
-                "1. Upgrade your weights to the new Vicuna-v1.3: https://github.com/lm-sys/FastChat#vicuna-weights.\n"
-                "2. Use the old conversation template by `python3 -m fastchat.serve.cli --model-path /path/to/vicuna-v0 --conv-template one_shot`\n"
+                "current graphedit.\nYou can try one of the following methods:\n"
+                "1. Upgrade your weights to the new Vicuna-v1.3: https://github.com/lm-sys/graphedit#vicuna-weights.\n"
+                "2. Use the old conversation template by `python3 -m graphedit.serve.cli --model-path /path/to/vicuna-v0 --conv-template one_shot`\n"
                 "3. Downgrade fschat to fschat==0.1.10 (Not recommended).\n"
             )
 
@@ -675,12 +675,12 @@ class LongChatAdapter(BaseModelAdapter):
 
 
 class GoogleT5Adapter(BaseModelAdapter):
-    """The model adapter for google/Flan based models, such as Salesforce/codet5p-6b, lmsys/fastchat-t5-3b-v1.0, flan-t5-*, flan-ul2"""
+    """The model adapter for google/Flan based models, such as Salesforce/codet5p-6b, lmsys/graphedit-t5-3b-v1.0, flan-t5-*, flan-ul2"""
 
     def match(self, model_path: str):
         return any(
             model_str in model_path.lower()
-            for model_str in ["flan-", "fastchat-t5", "codet5p"]
+            for model_str in ["flan-", "graphedit-t5", "codet5p"]
         )
 
     def load_model(self, model_path: str, from_pretrained_kwargs: dict):
@@ -879,7 +879,7 @@ class RwkvAdapter(BaseModelAdapter):
         return "rwkv-4" in model_path.lower()
 
     def load_model(self, model_path: str, from_pretrained_kwargs: dict):
-        from fastchat.model.rwkv_model import RwkvModel
+        from graphedit.model.rwkv_model import RwkvModel
 
         model = RwkvModel(model_path)
         revision = from_pretrained_kwargs.get("revision", "main")

@@ -30,7 +30,7 @@ def load_awq_quantized(model_name, awq_config: AWQConfig, device):
     except ImportError as e:
         print(f"Error: Failed to import tinychat. {e}")
         print("Please double check if you have successfully installed AWQ")
-        print("See https://github.com/lm-sys/FastChat/blob/main/docs/awq.md")
+        print("See https://github.com/lm-sys/graphedit/blob/main/docs/awq.md")
         sys.exit(-1)
 
     config = AutoConfig.from_pretrained(model_name, trust_remote_code=True)

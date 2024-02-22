@@ -142,7 +142,7 @@ def replace_llama_attn_with_flash_attn():
 
 
 def test():
-    from fastchat.train.llama_flash_attn_monkey_patch import forward as fastchat_forward
+    from graphedit.train.llama_flash_attn_monkey_patch import forward as graphedit_forward
     from transformers.models.llama.configuration_llama import LlamaConfig
 
     config = LlamaConfig(
@@ -172,7 +172,7 @@ def test():
             hidden, attention_mask=lmask, position_ids=position_ids
         )
 
-        fast, _, _ = fastchat_forward(
+        fast, _, _ = graphedit_forward(
             attn, hidden, attention_mask=mask, position_ids=position_ids
         )
 

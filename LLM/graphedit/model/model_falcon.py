@@ -6,7 +6,7 @@ import torch
 import transformers
 from transformers import TextIteratorStreamer, GenerationConfig
 
-from fastchat.utils import is_partial_stop
+from graphedit.utils import is_partial_stop
 
 
 @torch.inference_mode()

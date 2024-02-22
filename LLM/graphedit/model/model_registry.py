@@ -24,7 +24,7 @@ def get_model_info(name: str) -> ModelInfo:
     else:
         # To fix this, please use `register_model_info` to register your model
         return ModelInfo(
-            name, "", "Register the description at fastchat/model/model_registry.py"
+            name, "", "Register the description at graphedit/model/model_registry.py"
         )
 
 
@@ -183,9 +183,9 @@ register_model_info(
     "Code completion model released by Salesforce",
 )
 register_model_info(
-    ["fastchat-t5-3b", "fastchat-t5-3b-v1.0"],
-    "FastChat-T5",
-    "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
+    ["graphedit-t5-3b", "graphedit-t5-3b-v1.0"],
+    "graphedit-T5",
+    "https://huggingface.co/lmsys/graphedit-t5-3b-v1.0",
     "a chat assistant fine-tuned from FLAN-T5 by LMSYS",
 )
 register_model_info(
