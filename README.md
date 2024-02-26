@@ -4,7 +4,7 @@
 <a href='https://arxiv.org/abs/2402.15183'><img src='https://img.shields.io/badge/arXiv-2402.15183-b31b1b'></a>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/b9f51e64959e4999ad469c2ca437373a.png#pic_center)
 ## Code Structure
-```bash
+```
 .
 ├── README.md
 ├── GNN
@@ -241,23 +241,23 @@ python main.py
 ## 3. Instruction Template
 > Pubmed
 
-```bash
+```
 Based on the title and abstract of the two papers. Do they belong to the same category among Diabetes Mellitus Type 1, Diabetes Mellitus Type 2, or Diabetes Mellitus, Experimental? If the answer is \"True\", answer \"True\" and the category, otherwise answer \"False\". The first paper: {pubmed.raw_texts[paperID_0]} The second paper: {pubmed.raw_texts[paperID_1]}.
 ```
 
 > Citeseer
 
-```bash
+```
 Based on the title and abstract of the two papers. Do they belong to the same category among Agent, ML, IR, DB, HCI and AI? If the answer is \"True\", answer \"True\" and the category, otherwise answer \"False\". The first paper: {citeseer.raw_texts[paperID_0]} The second paper: {citeseer.raw_texts[paperID_1]}.
 ```
 > Cora
 
-```bash
+```
 Based on the title and abstract of the two papers. Do they belong to the same category among Rule_Learning, Neural_Networks, Case_Based, Genetic_Algorithms, Theory, Reinforcement_Learning or Probabilistic_Methods? If the answer is \"True\", answer \"True\" and the category, otherwise answer \"False\". If there is insufficient text information, answer \"True\". The first paper: Title: {cora.raw_text[paperID_0].split(':')[0]}  Abstract: {cora.raw_text[paperID_0].split(':')[1]}  The second paper: Title: {cora.raw_text[paperID_1].split(':')[0]}  Abstract: {cora.raw_text[paperID_1].split(':')[1]}.
 ```
 ## Citation
 
-```bash
+```
 @article{guo2024graphedit,
 title={GraphEdit: Large Language Models for Graph Structure Learning}, 
 author={Zirui Guo and Lianghao Xia and Yanhua Yu and Yuling Wang and Zixuan Yang and Wei Wei and Liang Pang and Tat-Seng Chua and Chao Huang},
