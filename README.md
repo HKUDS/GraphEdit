@@ -269,4 +269,4 @@ primaryClass={cs.CL}
 ```
 
 ## Acknowledgement
-The structure of the LLM in this code is largely based on [FastChat](https://github.com/lm-sys/FastChat). Thanks for their work.
+The structure of the LLM in this code is largely based on [FastChat](https://github.com/lm-sys/FastChat). And the original TAG datasets are provided by [Graph-LLM](https://github.com/CurryTang/Graph-LLM). Thanks for their work.
