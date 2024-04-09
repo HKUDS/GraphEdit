@@ -12,8 +12,7 @@ deepspeed --master_port 29501 graphedit/train/train_lora.py \
     --per_device_train_batch_size 1 \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 4 \
-    --evaluation_strategy "steps" \
-    --eval_steps 10000  \
+    --evaluation_strategy "no" \
     --save_strategy "steps" \
     --save_steps 10000 \
     --save_total_limit 1 \
