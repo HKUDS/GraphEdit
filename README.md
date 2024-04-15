@@ -182,7 +182,7 @@
     └── pyproject.toml
 ```
 ## 0. Python Environment Setup
-* Packed conda environment is provided [here](https://drive.google.com/file/d/1eeLKFiDU4CbOjb3uzl1Ur0jHXAEUyh5j/view?usp=drive_link)
+* Packed conda environment is provided [here](https://drive.google.com/file/d/1eeLKFiDU4CbOjb3uzl1Ur0jHXAEUyh5j/view?usp=drive_link) (NVIDIA GeForce RTX 3090)
 ```bash
 conda create --name GraphEdit python=3.8
 conda activate GraphEdit
