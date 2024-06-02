@@ -1,5 +1,9 @@
 
 # **GraphEdit: Large Language Models for Graph Structure Learning**
+
+
+<img src='GraphEdit_article_cover.png' />
+
 <a href='https://github.com/HKUDS/GraphEdit'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 <a href='https://arxiv.org/abs/2402.15183'><img src='https://img.shields.io/badge/arXiv-2402.15183-b31b1b'></a>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/b9f51e64959e4999ad469c2ca437373a.png#pic_center)
