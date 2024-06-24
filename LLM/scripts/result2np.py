@@ -15,7 +15,7 @@ result_list = [item['res'] for item in result_data]
 
 
 data = torch.load("../GNN/datasets/pubmed/pubmed_fixed_tfidf.pt")
-data.edge_index = np.load('../GNN/datasets/pubmed/' + data_name + '.npy')
+data.edge_index = np.load('../GNN/datasets/pubmed/pubmed_edges_add_3.npy')
 
 data_edges = []
 nums = 0
